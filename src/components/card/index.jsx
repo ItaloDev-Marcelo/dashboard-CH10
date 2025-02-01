@@ -11,7 +11,7 @@ export default function MiniCard({icon, title, points, hours, info, CN}) {
               <h2 className="card--title">{title}</h2>
               <button className="points"><img src={points} alt=''/></button>
              </div>
-             <div className="row-item1">
+             <div className="row-item1 down">
               <h3 className="card--hours">{hours}</h3>
               <h4 className="card--add-info">{info}</h4>
              </div>

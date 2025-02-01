@@ -22,7 +22,7 @@ function App() {
       <MiniCard key={index} icon={icon} title={title} CN={item.CN}
        points={points} 
        hours={data === 0 ? timeframes.daily.current+'hrs'   : data === 1 ? timeframes.weekly.current+'hrs'  : timeframes.monthly.current+'hrs'  }
-       info={data === 0 ? 'Daily ' + timeframes.daily.previous+'hrs'  : data === 1 ? 'Last Week ' + timeframes.weekly.previous+'hrs'  : 'Last Month ' + timeframes.monthly.previous+'hrs'  } />
+       info={data === 0 ? 'Daily -' + timeframes.daily.previous+'hrs'  : data === 1 ? 'Last Week -' + timeframes.weekly.previous+'hrs'  : 'Month -' + timeframes.monthly.previous+'hrs'  } />
     )
    })
 

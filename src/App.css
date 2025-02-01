@@ -19,6 +19,12 @@
 --Pale-Blue: hsl(236, 100%, 87%);
 }
 
+body {
+  font-size: 1.125em;
+  font-family: "Rubik", serif;
+  background-color: var(--Very-dark-blue);
+}
+
 
 button {
   border: none !important;
@@ -28,6 +34,7 @@ button {
 
 #container {
   display: flex;
+  margin: 2em 0;
   justify-content: center;
 }
 
@@ -35,27 +42,38 @@ button {
 #grid-container {
    display: grid;
    grid-template-columns: 1fr;  
-   gap: 10px;
+   gap: 20px;
   }
 
 
     
 .Controll {
   width: 330px;
-  height: 205px;
+  height: 205px; 
+  border-radius: 10px;
 }
 
 #Profile-row {
   display: flex;
   justify-content: space-between;
-  padding: 0 5em 0 2em;
+  padding: 0 1em 0 1em;
   align-items: center;
   height: 135px;
   background-color: var(--Blue);
+  
+  border-radius: 10px;
 }
 
 #profile-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
+}
+
+#profile-title #small  {
+  font-size: .9em;
+} 
+
+strong {
+  font-size: 1.5em;
 }
 
 .Controll  #Profile-row .profile-circle img {
@@ -86,11 +104,60 @@ button {
   background-color: var(--Dark-blue);
 }
 
-
-
-.card--1, .card--2, .card--3, .card--4, .card--5, .card--6 {
-   border-radius: 10px 10px 0 0;
+.card--1, .card--2, .card--3, .card--4, .card--5, .card--6 {  
+  position: relative;
+   border-radius: 10px ;
+   
+   grid-template-rows: 300px;
 }
+
+.row-item1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 1.7em;
+}
+
+.row-item1:nth-child(1) {
+  margin: -1em 0 1em 0;
+}
+
+.row-item1 .card--title {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card--hours {
+  font-size: 2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.card--add-info {
+  font-size: 1.2em;
+  color: var(--Pale-Blue);
+  opacity: .7;
+  font-weight: 300;
+}
+
+.information--area {
+  margin-top: -25px;
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+
+.card--4 .information--area {
+  margin-top: -14px;
+}
+
+.card--5 .information--area {
+  margin-top: -45px;
+}
+
 
 .back-image img {
   position: relative;
