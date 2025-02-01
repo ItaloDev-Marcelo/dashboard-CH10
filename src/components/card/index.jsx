@@ -1,8 +1,8 @@
 
 
-export default function MiniCard({icon, title, points, hours, info}) {
+export default function MiniCard({icon, title, points, hours, info, CN}) {
     return (
-        <article className="Mini--Card--item">
+        <article className={CN}>
            <div className='back-image'>
               <img src={icon} alt='zero' />
            </div>

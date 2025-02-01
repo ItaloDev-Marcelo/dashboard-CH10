@@ -1,42 +1,169 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+:root {
+--Blue: hsl(246, 80%, 60%);
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+button {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+
+#grid-container {
+   display: grid;
+   grid-template-columns: 1fr;  
+   gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+    
+.Controll {
+  width: 330px;
+  height: 205px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#Profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em 0 2em;
+  align-items: center;
+  height: 135px;
+  background-color: var(--Blue);
 }
 
-.card {
-  padding: 2em;
+#profile-title {
+  font-size: 1.2em;
 }
 
-.read-the-docs {
-  color: #888;
+.Controll  #Profile-row .profile-circle img {
+  border: 2px solid #fff;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.row button {
+  margin-top: 1em;
+  font-size: 1.3em;
+  color: var(--Pale-Blue);
+  opacity: .3;
+}
+
+.row button:hover, .row button:active {
+  color: #fff;
+  opacity: 1;
+}
+
+.Controll , .information--area {
+  background-color: var(--Dark-blue);
+}
+
+
+
+.card--1, .card--2, .card--3, .card--4, .card--5, .card--6 {
+   border-radius: 10px 10px 0 0;
+}
+
+.back-image img {
+  position: relative;
+  left: 250px;
+}
+
+
+.card--1 {
+  background-color: var(--Light-red-work);
+}
+
+.card--2 {
+  background-color: var(--Soft-blue-play);
+}
+
+.card--3 {
+  background-color: var(--Light-red-study);
+}
+
+.card--4 {
+  background-color: var(--Lime-green-exercise);
+}
+
+.card--5 {
+   background-color: var(--Violet-social);
+}
+
+
+.card--6 {
+   background-color: var(--Soft-orange-self-care);
+}
+
+
+
+@media (min-width: 1024px) {
+  #grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    ' profile card1 card2  card3 ' 
+    ' profile card4 card5 card6 ';
+ }
+
+
+ 
+.Controll {
+  grid-area: profile;
+}
+
+.card--1 {
+   grid-area:  card1 ;
+}
+
+.card--2 {
+  grid-area:  card2;
+}
+
+.card--3 {
+  grid-area:  card3 ;
+}
+
+.card--4 {
+  grid-area:  card4 ;
+}
+
+.card--5 {
+  grid-area:  card5 ;
+}
+
+
+.card--6 {
+  grid-area:  card6 ;
+}
+
 }

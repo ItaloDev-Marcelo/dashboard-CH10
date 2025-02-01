@@ -14,7 +14,7 @@ export default [
     {
       title:'Work',
       icon: img,
-      class: 'card--1',
+      CN: 'card--1',
       timeframes: {
         daily: {
           current: 5,
@@ -33,7 +33,7 @@ export default [
     {
       title: 'Play',
       icon: img1,
-      class: 'card--2',
+      CN: 'card--2',
       timeframes: {
         daily: {
           current: 1,
@@ -52,7 +52,7 @@ export default [
     {
       title: 'Study',
       icon: img2,
-      class: 'card--3',
+      CN: 'card--3',
       timeframes: {
         daily: {
           current: 0,
@@ -71,7 +71,7 @@ export default [
     {
       title: 'Exercise',
       icon: img3,
-      class: 'card--4',
+      CN: 'card--4',
       timeframes: {
         daily: {
           current: 1,
@@ -90,7 +90,7 @@ export default [
     {
       title: 'Social',
       icon: img4,
-      class: 'card--5',
+      CN: 'card--5',
       timeframes: {
         daily: {
           current: 1,
@@ -109,7 +109,7 @@ export default [
     {
       title:'Self Care',
       icon: img5,
-      class: 'card--6',
+      CN: 'card--6',
       timeframes: {
         daily: {
           current: 0,
