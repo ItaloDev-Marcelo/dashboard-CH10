@@ -200,6 +200,14 @@ strong {
   body{
     overflow: hidden;
   }
+
+  
+#container {
+  display: flex;
+  margin: 3.5em 0 0 0;
+  justify-content: center;
+}
+
   
   #grid-container {
     display: grid;
