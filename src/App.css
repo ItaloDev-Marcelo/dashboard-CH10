@@ -56,7 +56,7 @@ button {
 #Profile-row {
   display: flex;
   justify-content: space-between;
-  padding: 0 1em 0 1em;
+  padding: 0 1.5em 0 1em;
   align-items: center;
   height: 135px;
   background-color: var(--Blue);
@@ -66,14 +66,18 @@ button {
 
 #profile-title {
   font-size: 1.1em;
+  color: #fff;
 }
 
 #profile-title #small  {
   font-size: .9em;
+  font-weight: 400;
+  color: var(--Pale-Blue);
 } 
 
 strong {
   font-size: 1.5em;
+  font-weight: 500;
 }
 
 .Controll  #Profile-row .profile-circle img {
@@ -193,20 +197,110 @@ strong {
 
 
 @media (min-width: 1024px) {
+  body{
+    overflow: hidden;
+  }
+  
   #grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 330px);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 261px);
+    grid-template-rows: repeat(4, 244px);
     grid-template-areas: 
     ' profile card1 card2  card3 ' 
     ' profile card4 card5 card6 ';
+    padding: 2em;
+    gap:  40px 30px;
  }
 
+.card--1, .card--2,.card--3, .card--4 , .card--5, .card--6 {
+  overflow: hidden;
+}
+
+.row-item1:nth-child(1) {
+  margin: -1.5em 0 .5em 0;
+}
+
+
+ .back-image img {
+  position: relative;
+  left: 175px;
+}
+
+.information--area {
+  padding: 47px 0;
+}
+
+.card--2 
+.information--area {
+  padding: 48px 0;
+} 
+
+
+.row-item1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 1em;
+}
+
+.row-item1:nth-child(2) {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card--hours {
+  font-size: 3em;
+  font-weight: 400;
+  color: #fff;
+}
 
  
+
+.card--4 
+.information--area, .card--6 
+.information--area  {
+  padding: 53px 0;
+} 
+
+.card--5 
+.information--area  {
+  margin-top: -57px;
+  padding: 53px 0;
+} 
+
 .Controll {
   grid-area: profile;
+  width:  261px;
+  height: 530px; 
 }
+
+#Profile-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3em 2em 0 2em;
+  align-items: flex-start;
+  background-color: var(--Blue); 
+  border-radius: 10px;
+  
+  height: 350px;
+}
+
+#profile-title {
+  margin-top: 1em;
+  font-size: 1.5em;
+  line-height: 40px;
+}
+
+#profile-title #small  {
+  font-size: .7em;
+  font-weight: 400;
+} 
+
+strong {
+  font-size: 1.5em;
+}
+
 
 .card--1 {
    grid-area:  card1 ;
@@ -232,5 +326,13 @@ strong {
 .card--6 {
   grid-area:  card6 ;
 }
+
+
+.row {
+  padding: 0 1.5em;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 
 }
