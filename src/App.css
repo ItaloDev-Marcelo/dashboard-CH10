@@ -83,6 +83,7 @@ strong {
 .Controll  #Profile-row .profile-circle img {
   border: 2px solid #fff;
   width: 75px;
+  margin-right: .2em;
   border-radius: 50%;
 }
 
