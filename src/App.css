@@ -101,6 +101,11 @@ strong {
   opacity: .3;
 }
 
+.daily-btn.active, .weekly-btn.active, .monthly-btn.active {
+  color: #fff;
+  opacity: 1;
+}
+
 .row button:hover, .row button:active {
   color: #fff;
   opacity: 1;
